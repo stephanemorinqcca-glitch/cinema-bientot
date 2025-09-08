@@ -1,47 +1,71 @@
-<script>
-document.addEventListener("DOMContentLoaded", async () => {
-  const container = document.createElement("main");
-  document.body.appendChild(container);
-
-  try {
-    const response = await fetch("bientot.json");
-    const films = await response.json();
-
-    // Grouper les films par mois
-    const filmsParMois = {};
-    films.forEach(film => {
-      const date = new Date(film.OpeningDate);
-      const mois = date.toLocaleString("fr-CA", { month: "long", year: "numeric" });
-      if (!filmsParMois[mois]) filmsParMois[mois] = [];
-      filmsParMois[mois].push(film);
-    });
-
-    // Générer le HTML
-    for (const [mois, films] of Object.entries(filmsParMois)) {
-      const section = document.createElement("section");
-      section.innerHTML = `<h2>${mois}</h2>`;
-      
-      films.forEach(film => {
-        const date = new Date(film.OpeningDate);
-        const dateStr = date.toLocaleDateString("fr-CA", { day: "numeric", month: "long", year: "numeric" });
-
-        const bandeAnnonceURL = film.bande_annonce?.replace("watch?v=", "embed/") ?? "";
-
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <div class="poster">
-            <img src="${film.affiche}" altiv id="date">Sortie : ${dateStr}</div>
-          </div>
-          <div class="trailer">
-            <iframe width="300" height="170" src="${bandeAnnonceURL}" frameborder="0" allowfullscreen;
-      });
-
-      container.appendChild(section);
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Films à venir par mois</title>
+  style.css
+  <style>
+    iframe {
+      max-width: 100%;
+      border: none;
     }
+  </style>
+</head>
+<body>
+  <main id="films-container">
+    <h1>Films à venir</h1>
+  </main>
 
-  } catch (error) {
-    console.error("Erreur lors du chargement des films :", error);
-  }
-});
-</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const container = document.getElementById("films-container");
+
+      try {
+        const response = await fetch("bientot.json");
+        const films = await response.json();
+
+        const filmsParMois = {};
+        films.forEach(film => {
+          const date = new Date(film.OpeningDate);
+          const mois = date.toLocaleString("fr-CA", { month: "long", year: "numeric" });
+          if (!filmsParMois[mois]) filmsParMois[mois] = [];
+          filmsParMois[mois].push(film);
+        });
+
+        for (const [mois, films] of Object.entries(filmsParMois)) {
+          const section = document.createElement("section");
+          section.innerHTML = `<h2>${mois}</h2>`;
+
+          films.forEach(film => {
+            const date = new Date(film.OpeningDate);
+            const dateStr = date.toLocaleDateString("fr-CA", {
+              day: "numeric",
+              month: "long",
+              year: "numeric"
+            });
+
+            const bandeAnnonceURL = film.bande_annonce?.replace("watch?v=", "embed/") ?? "";
+
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+              <div class="poster">
+                <img src="${film.affiche}" alt="${filmd="date">Sortie : ${dateStr}</div>
+              </div>
+              <div class="trailer">
+                ${bandeAnnonceURL}</iframe>
+              </div>
+            `;
+            section.appendChild(card);
+          });
+
+          container.appendChild(section);
+        }
+
+      } catch (error) {
+        console.error("Erreur lors du chargement des films :", error);
+      }
+    });
+  </script>
+</body>
+</html>
