@@ -1,7 +1,9 @@
-/* Général */
+/* Thème sombre pour le site cinéma */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +16,7 @@ main {
 
 h1, h2 {
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
 section {
@@ -23,21 +25,23 @@ section {
 
 /* Carte de film */
 .card {
-  background-color: #fff;
+  background-color: #111;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(255,255,255,0.1);
   margin: 1rem auto;
   padding: 1rem;
   max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: #eee;
+  border: 1px solid #333;
 }
 
 .card h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: #444;
+  color: #fff;
 }
 
 .poster img {
@@ -47,7 +51,7 @@ section {
 
 .date {
   font-size: 0.9rem;
-  color: #666;
+  color: #ccc;
   margin-top: 0.5rem;
 }
 
@@ -60,7 +64,7 @@ section {
 
 .card p {
   font-size: 1rem;
-  color: #555;
+  color: #ddd;
 }
 
 /* Responsive */
