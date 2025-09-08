@@ -1,11 +1,9 @@
-name: Update films.json
+name: Update bientot.json
 
 permissions:
   contents: write
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'  # Toutes les 5 minutes
   workflow_dispatch:         # Permet de lancer manuellement
 
 jobs:
@@ -30,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add films.json checksumfilms.json
-          git diff --cached --quiet || git commit -m "🔄 Mise à jour automatique de films.json"
+          git add bientot.json
+          git diff --cached --quiet || git commit -m "🔄 Mise à jour automatique de bientot.json"
           git push
