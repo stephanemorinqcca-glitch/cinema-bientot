@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bientôt à l'affiche au Cinéma centre-ville | St-Georges</title>
-<link href="style.css" rel="stylesheet"/>
+  style.css
 </head>
 <body>
   <main id="films-container">
@@ -39,22 +39,26 @@
             });
 
             const bandeAnnonceURL = film.bande_annonce?.replace("watch?v=", "embed/") ?? "";
+            const bandeAnnonceHTML = bandeAnnonceURL
+              ? `${bandeAnnonceURL}</iframe>`
+              : "";
+
+            const afficheHTML = film.affiche
+              ? `${film.affiche}`
+              : "";
 
             const card = document.createElement("div");
             card.className = "card";
             card.innerHTML = `
+              <h3>${film.Title}</h3>
               <div class="poster">
-                ${film.affiche}
-                <div id="date">Sortie : ${dateStr}</div>
+                ${afficheHTML}
+                <div class="date">Sortie : ${dateStr}</div>
               </div>
               <div class="trailer">
-                ${bandeAnnonceURL}</iframe>
+                ${bandeAnnonceHTML}
               </div>
-            `;
-
-              <div class="trailer">
-                ${bandeAnnonceURL}</iframe>
-              </div>
+              <p>${film.Description ?? ""}</p>
             `;
             section.appendChild(card);
           });
@@ -62,8 +66,13 @@
           container.appendChild(section);
         }
 
+        if (films.length === 0) {
+          container.innerHTML += "<p>Aucun film à venir pour le moment.</p>";
+        }
+
       } catch (error) {
         console.error("Erreur lors du chargement des films :", error);
+        container.innerHTML += "<p>Impossible de charger les films pour le moment.</p>";
       }
     });
   </script>
