@@ -44,8 +44,14 @@
             card.className = "card";
             card.innerHTML = `
               <div class="poster">
-                <img src="${film.affiche}" alt="${filmd="date">Sortie : ${dateStr}</div>
+                ${film.affiche}
+                <div id="date">Sortie : ${dateStr}</div>
               </div>
+              <div class="trailer">
+                ${bandeAnnonceURL}</iframe>
+              </div>
+            `;
+
               <div class="trailer">
                 ${bandeAnnonceURL}</iframe>
               </div>
