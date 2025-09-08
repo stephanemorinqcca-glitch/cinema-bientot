@@ -52,6 +52,9 @@ for film in films:
         except Exception as e:
             print(f"⚠️ Erreur de parsing de date pour {release_date_str} : {e}")
 
+# 🔽 Tri par date croissante
+bientot_films.sort(key=lambda x: datetime.strptime(x["OpeningDate"], "%Y-%m-%dT%H:%M:%S"))
+
 # Sauvegarder dans bientot.json
 with open("bientot.json", "w", encoding="utf-8") as f:
     json.dump(bientot_films, f, ensure_ascii=False, indent=2)
