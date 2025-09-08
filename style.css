@@ -1,3 +1,4 @@
+/* Général */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -20,6 +21,7 @@ section {
   margin-bottom: 3rem;
 }
 
+/* Carte de film */
 .card {
   background-color: #fff;
   border-radius: 8px;
@@ -59,4 +61,29 @@ section {
 .card p {
   font-size: 1rem;
   color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trailer iframe {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
 }
