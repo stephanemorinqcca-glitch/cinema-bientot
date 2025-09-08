@@ -12,8 +12,9 @@
 <body>
   <main id="films-container">
     <h1>Films à venir</h1>
-  </main>
-<script src="https://codequery-3.6.0.min.js</script>
+</main>
+<!-- Charger jQuery correctement -->
+<script src="https://code.jquery.com/jquery-3.6.0.min
 <script>
   document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("films-container");
@@ -44,7 +45,10 @@
 
           const bandeAnnonceURL = film.bande_annonce?.replace("watch?v=", "embed/") ?? "";
           const bandeAnnonceHTML = bandeAnnonceURL
-            ? `<iframe width="560" height="315" src="${bandeAnnonceURL}" frame afficheHTML = film.affiche
+            ? `<iframe widtheURL}</iframe>`
+            : "";
+
+          const afficheHTML = film.affiche
             ? `${film.affiche}`
             : "";
 
