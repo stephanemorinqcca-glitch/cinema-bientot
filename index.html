@@ -50,10 +50,9 @@
           const card = document.createElement("div");
           card.className = "card";
           card.innerHTML = `
-            <h3>${film.Title}</h3>
             <div class="poster">
               ${afficheHTML}
-              <div class="date">Sortie : ${dateStr}</div>
+              <div class="date">${dateStr}</div>
             </div>
             <div class="trailer">
               ${bandeAnnonceHTML}
