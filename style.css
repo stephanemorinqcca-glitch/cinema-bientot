@@ -85,46 +85,8 @@ header {
     width: 125px;
 }
 
-.classification-image {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 135px;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    float: left; /* Alignement à gauche */
-}
-
 h1 {
     margin: 0;
-}
-
-.rating {
-    font-weight: bold;
-}
-
-.rating,
-.content {
-    font-size: 14px;
-}
-
-.classification-details {
-    margin: 15px 0 5px 0;
-    font-size: 12px;
-}
-
-.synopsis {
-    white-space: break-spaces;
-    margin: 15px 0 5px 0;
-    text-align: justify;
-    font-size: 12px;
-}
-
-.seances {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .jour-label {
