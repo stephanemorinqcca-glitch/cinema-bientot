@@ -9,72 +9,69 @@
   <main id="films-container">
     <h1>Films à venir</h1>
   </main>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.getElementById("films-container");
 
-  <script>
-    document.addEventListener("DOMContentLoaded", async () => {
-      const container = document.getElementById("films-container");
+    try {
+      const response = await fetch("bientot.json");
+      const films = await response.json();
 
-      try {
-        const response = await fetch("bientot.json");
-        const films = await response.json();
+      const filmsParMois = {};
+      films.forEach(film => {
+        const date = new Date(film.OpeningDate);
+        const mois = date.toLocaleString("fr-CA", { month: "long", year: "numeric" });
+        if (!filmsParMois[mois]) filmsParMois[mois] = [];
+        filmsParMois[mois].push(film);
+      });
 
-        const filmsParMois = {};
+      for (const [mois, films] of Object.entries(filmsParMois)) {
+        const section = document.createElement("section");
+        section.innerHTML = `<h2>${mois}</h2>`;
+
         films.forEach(film => {
           const date = new Date(film.OpeningDate);
-          const mois = date.toLocaleString("fr-CA", { month: "long", year: "numeric" });
-          if (!filmsParMois[mois]) filmsParMois[mois] = [];
-          filmsParMois[mois].push(film);
-        });
-
-        for (const [mois, films] of Object.entries(filmsParMois)) {
-          const section = document.createElement("section");
-          section.innerHTML = `<h2>${mois}</h2>`;
-
-          films.forEach(film => {
-            const date = new Date(film.OpeningDate);
-            const dateStr = date.toLocaleDateString("fr-CA", {
-              day: "numeric",
-              month: "long",
-              year: "numeric"
-            });
-
-            const bandeAnnonceURL = film.bande_annonce?.replace("watch?v=", "embed/") ?? "";
-            const bandeAnnonceHTML = bandeAnnonceURL
-              ? `${bandeAnnonceURL}</iframe>`
-              : "";
-
-            const afficheHTML = film.affiche
-              ? `${film.affiche}`
-              : "";
-
-            const card = document.createElement("div");
-            card.className = "card";
-            card.innerHTML = `
-              <h3>${film.Title}</h3>
-              <div class="poster">
-                ${afficheHTML}
-                <div class="date">Sortie : ${dateStr}</div>
-              </div>
-              <div class="trailer">
-                ${bandeAnnonceHTML}
-              </div>
-              <p>${film.Description ?? ""}</p>
-            `;
-            section.appendChild(card);
+          const dateStr = date.toLocaleDateString("fr-CA", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
           });
 
-          container.appendChild(section);
-        }
+          const bandeAnnonceURL = film.bande_annonce?.replace("watch?v=", "embed/") ?? "";
+          const bandeAnnonceHTML = bandeAnnonceURL
+            ? `<iframe width="560" height="315" src="${bandeAnnonceURL}" frame afficheHTML = film.affiche
+            ? `${film.affiche}`
+            : "";
 
-        if (films.length === 0) {
-          container.innerHTML += "<p>Aucun film à venir pour le moment.</p>";
-        }
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <h3>${film.Title}</h3>
+            <div class="poster">
+              ${afficheHTML}
+              <div class="date">Sortie : ${dateStr}</div>
+            </div>
+            <div class="trailer">
+              ${bandeAnnonceHTML}
+            </div>
+            <p>${film.Description ?? ""}</p>
+          `;
+          section.appendChild(card);
+        });
 
-      } catch (error) {
-        console.error("Erreur lors du chargement des films :", error);
-        container.innerHTML += "<p>Impossible de charger les films pour le moment.</p>";
+        container.appendChild(section);
       }
-    });
-  </script>
+
+      if (films.length === 0) {
+        container.innerHTML += "<p>Aucun film à venir pour le moment.</p>";
+      }
+
+    } catch (error) {
+      console.error("Erreur lors du chargement des films :", error);
+      container.innerHTML += "<p>Impossible de charger les films pour le moment.</p>";
+    }
+  });
+</script>
+
 </body>
 </html>
