@@ -94,8 +94,22 @@
                       src = src.replace("youtu.be/", "www.youtube.com/embed/");
                     }
 
+                    // Adaptation pour Vimeo
+                    else if (src.includes("vimeo.com/")) {
+                      const match = src.match(/vimeo\.com\/(\d+)/);
+                      if (match && match[1]) {
+                        const videoId = match[1];
+                          src = `https://player.vimeo.com/video/${videoId}`;
+                      }
+                    }
+
                     iframe.src = src;
+                    iframe.width = "640";
+                    iframe.height = "360";
+                    iframe.frameBorder = "0";
                     iframe.allowFullscreen = true;
+
+                    ocument.body.appendChild(iframe);
 
                     modalContent.appendChild(closeBtn);
                     modalContent.appendChild(iframe);
