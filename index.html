@@ -14,9 +14,9 @@
     <h1>Bientôt à l'affiche au Cinéma centre-ville St-Georges</h1>
     <h2>Films à venir</h2>
     <div id="films-container" class="card-container"></div>
-  </main>
+ </main>
 
-   <script>
+ <script>
     async function chargerFilms() {
       const container = document.getElementById("films-container");
 
@@ -31,7 +31,7 @@
           const date = new Date(film.OpeningDate);
           const mois = date.toLocaleString("fr-FR", { month: "long" }).toUpperCase();
           const annee = date.getFullYear();
-          const cle = `${mois} ${annee}`; // Format : "OCTOBRE 2025"
+          const cle = `${mois} ${annee}`;
 
           if (!filmsParMois[cle]) {
             filmsParMois[cle] = [];
@@ -51,59 +51,39 @@
           filmsDuMois.forEach(film => {
             const card = document.createElement("div");
             card.className = "card";
-            
-            // const titre = document.createElement("h3");
-            // titre.textContent = film.titre;
-            // card.appendChild(titre); 
 
+            // Affiche
             if (film.affiche) {
               const posterDiv = document.createElement("div");
               posterDiv.className = "poster";
 
-				const img = document.createElement("img");
-				img.src = film.affiche;
-				img.alt = "Affiche de " + film.titre;
+              const img = document.createElement("img");
+              img.src = film.affiche;
+              img.alt = "Affiche de " + film.titre;
 
-				// Si une bande-annonce est disponible, rendre l'affiche cliquable
-				if (film.bande_annonce) {
-					img.style.cursor = "pointer";
-					img.addEventListener("click", () => {
-					const url = film.bande_annonce;
+              // Si une bande-annonce est disponible
+              if (film.bande_annonce) {
+                img.style.cursor = "pointer";
+                img.addEventListener("click", () => {
+                  if (film.bande_annonce.includes("youtube.com") || film.bande_annonce.includes("youtu.be")) {
+                    const trailerDiv = document.createElement("div");
+                    trailerDiv.className = "trailer";
+                    const iframe = document.createElement("iframe");
+                    iframe.src = film.bande_annonce.replace("watch?v=", "embed/");
+                    iframe.allowFullscreen = true;
+                    trailerDiv.appendChild(iframe);
+                    card.appendChild(trailerDiv);
+                  } else {
+                    window.open(film.bande_annonce, "_blank");
+                  }
+                });
+              }
 
-					if (film.affiche) {
-						const posterDiv = document.createElement("div");
-						posterDiv.className = "poster";
+              posterDiv.appendChild(img);
+              card.appendChild(posterDiv);
+            }
 
-						const img = document.createElement("img");
-						mg.src = film.affiche;
-						img.alt = "Affiche de " + film.titre;
-
-						// Si une bande-annonce est disponible
-						if (film.bande_annonce) {
-							img.style.cursor = "pointer";
-							img.addEventListener("click", () => {
-							if (film.bande_annonce.includes("youtube.com") || film.bande_annonce.includes("youtu.be")) {
-								// Créer un iframe pour YouTube
-								const trailerDiv = document.createElement("div");
-								trailerDiv.className = "trailer";
-								const iframe = document.createElement("iframe");
-								iframe.src = film.bande_annonce.replace("watch?v=", "embed/");
-								iframe.allowFullscreen = true;
-								trailerDiv.appendChild(iframe);
-								card.appendChild(trailerDiv);
-							} else {
-								// Ouvrir les autres vidéos dans un nouvel onglet
-								window.open(film.bande_annonce, "_blank");
-							}
-						}
-					}	
-				});
-			}
-
-            posterDiv.appendChild(img);
-            card.appendChild(posterDiv);
-
-            // Affichage de la date : 25 OCTOBRE
+            // Date : 25 OCTOBRE
             const dateDiv = document.createElement("div");
             dateDiv.className = "date";
             const date = new Date(film.OpeningDate);
@@ -112,12 +92,6 @@
             dateDiv.innerHTML = `${jour} ${mois}`;
             card.appendChild(dateDiv);
 
-            // if (film.synopsis) {
-            //  const synopsis = document.createElement("p");
-            //  synopsis.textContent = film.synopsis;
-            //  card.appendChild(synopsis);
-            // }
-            
             section.appendChild(card);
           });
 
