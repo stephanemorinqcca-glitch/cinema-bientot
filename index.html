@@ -64,7 +64,7 @@
 
             const dateDiv = document.createElement("div");
             dateDiv.className = "date";
-            dateDiv.innerHTML = "<strong>Date de sortie :</strong> " + new Date(film.OpeningDate).toLocaleDateString("fr-CA");
+            dateDiv.innerHTML = new Date(film.OpeningDate).toLocaleDateString("fr-CA");
             card.appendChild(dateDiv);
 
             if (film.bande_annonce) {
