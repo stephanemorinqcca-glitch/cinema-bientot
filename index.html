@@ -59,36 +59,57 @@
             if (film.affiche) {
               const posterDiv = document.createElement("div");
               posterDiv.className = "poster";
-              const img = document.createElement("img");
-              img.src = film.affiche;
-              img.alt = "Affiche de " + film.titre;
-              posterDiv.appendChild(img);
-              card.appendChild(posterDiv);
+
+            const img = document.createElement("img");
+            img.src = film.affiche;
+            img.alt = "Affiche de " + film.titre;
+
+            // Si une bande-annonce est disponible, rendre l'affiche cliquable
+            if (film.bande_annonce) {
+              img.style.cursor = "pointer";
+              img.addEventListener("click", () => {
+            const url = film.bande_annonce;
+
+            if (film.affiche) {
+              const posterDiv = document.createElement("div");
+              posterDiv.className = "poster";
+
+            const img = document.createElement("img");
+            img.src = film.affiche;
+            img.alt = "Affiche de " + film.titre;
+
+            // Si une bande-annonce est disponible
+            if (film.bande_annonce) {
+              img.style.cursor = "pointer";
+              img.addEventListener("click", () => {
+                if (film.bande_annonce.includes("youtube.com") || film.bande_annonce.includes("youtu.be")) {
+                  // Créer un iframe pour YouTube
+                    const trailerDiv = document.createElement("div");
+                    trailerDiv.className = "trailer";
+                    const iframe = document.createElement("iframe");
+                    iframe.src = film.bande_annonce.replace("watch?v=", "embed/");
+                    iframe.allowFullscreen = true;
+                    trailerDiv.appendChild(iframe);
+                    card.appendChild(trailerDiv);
+                } else {
+                  // Ouvrir les autres vidéos dans un nouvel onglet
+                  window.open(film.bande_annonce, "_blank");
+                }
+              });
             }
 
-            // const dateDiv = document.createElement("div");
-            // dateDiv.className = "date";
-            // dateDiv.innerHTML = new Date(film.OpeningDate).toLocaleDateString("fr-CA");
-            // card.appendChild(dateDiv);
+            posterDiv.appendChild(img);
+            card.appendChild(posterDiv);
+          }
+
+            // Affichage de la date : 25 OCTOBRE
             const dateDiv = document.createElement("div");
             dateDiv.className = "date";
-
             const date = new Date(film.OpeningDate);
             const jour = date.getDate();
             const mois = date.toLocaleString("fr-FR", { month: "long" }).toUpperCase();
-
             dateDiv.innerHTML = `${jour} ${mois}`;
             card.appendChild(dateDiv);
-
-            if (film.bande_annonce) {
-              const trailerDiv = document.createElement("div");
-              trailerDiv.className = "trailer";
-              const iframe = document.createElement("iframe");
-              iframe.src = film.bande_annonce;
-              iframe.allowFullscreen = true;
-              trailerDiv.appendChild(iframe);
-              card.appendChild(trailerDiv);
-            }
 
             // if (film.synopsis) {
             //  const synopsis = document.createElement("p");
