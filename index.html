@@ -11,12 +11,11 @@
 </head>
 <body>
   <!-- Bouton pour ouvrir la modale -->
-  <button id="openBtn">Ouvrir la vidéo</button>
+
 
   <!-- Modale -->
   <div id="modal" style="display:none;">
     <iframe id="videoFrame" src="" width="560" height="315"></iframe>
-    <button id="closeBtn">Fermer</button>
   </div>
  <main>
     <h1>BIENTÔT À L'AFFICHE</h1>
@@ -31,8 +30,8 @@
 
     // Fermer la modale
     closeBtn.onclick = () => {
-    modal.style.display = "none";
-    iframe.src = ""; // Stop la vidéo
+      modal.style.display = "none";
+      iframe.src = ""; // Stop la vidéo
     };
 
     window.onclick = (event) => {
