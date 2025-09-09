@@ -10,37 +10,12 @@
   <link href="style.css" rel="stylesheet"/> 
 </head>
 <body>
-  <!-- Bouton pour ouvrir la modale -->
-
-
-  <!-- Modale -->
-  <div id="modal" style="display:none;">
-    <iframe id="videoFrame" src="" width="560" height="315"></iframe>
-  </div>
  <main>
     <h1>BIENTÔT À L'AFFICHE</h1>
     <div id="films-container" class="card-container"></div>
  </main>
 
  <script>
-    // Références à la modale
-    const modal = document.getElementById("video-modal");
-    const iframe = document.getElementById("video-frame");
-    const closeBtn = document.querySelector(".close");
-
-    // Fermer la modale
-    closeBtn.onclick = () => {
-      modal.style.display = "none";
-      iframe.src = ""; // Stop la vidéo
-    };
-
-    window.onclick = (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-      iframe.src = "";
-      }
-    };
-   
     async function chargerFilms() {
       const container = document.getElementById("films-container");
 
@@ -79,27 +54,33 @@
             // Affiche
             if (film.affiche) {
               const posterDiv = document.createElement("div");
-            posterDiv.className = "poster";
+              posterDiv.className = "poster";
 
-            const img = document.createElement("img");
-            img.src = film.affiche;
-            img.alt = "Affiche de " + film.titre;
+              const img = document.createElement("img");
+              img.src = film.affiche;
+              img.alt = "Affiche de " + film.titre;
 
-            if (film.bande_annonce) {
+              // Si une bande-annonce est disponible
+              if (film.bande_annonce) {
                 img.style.cursor = "pointer";
                 img.addEventListener("click", () => {
-                let videoUrl = film.bande_annonce;
-                if (videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")) {
-                  videoUrl = videoUrl.replace("watch?v=", "embed/");
-                }
-                iframe.src = videoUrl;
-                modal.style.display = "block";
-              });
-            }
+                  if (film.bande_annonce.includes("youtube.com") || film.bande_annonce.includes("youtu.be")) {
+                    const trailerDiv = document.createElement("div");
+                    trailerDiv.className = "trailer";
+                    const iframe = document.createElement("iframe");
+                    iframe.src = film.bande_annonce.replace("watch?v=", "embed/");
+                    iframe.allowFullscreen = true;
+                    trailerDiv.appendChild(iframe);
+                    card.appendChild(trailerDiv);
+                  } else {
+                    window.open(film.bande_annonce, "_blank");
+                  }
+                });
+              }
 
-            posterDiv.appendChild(img);
-            card.appendChild(posterDiv);
-          }
+              posterDiv.appendChild(img);
+              card.appendChild(posterDiv);
+            }
 
             // Date : 25 OCTOBRE
             const dateDiv = document.createElement("div");
@@ -107,7 +88,7 @@
             const date = new Date(film.OpeningDate);
             const jour = date.getDate();
             const mois = date.toLocaleString("fr-FR", { month: "long" }).toUpperCase();
-            dateDiv.innerHTML = `<strong>${jour} ${mois}</strong>`;
+            dateDiv.innerHTML = `${jour} ${mois}`;
             card.appendChild(dateDiv);
 
             section.appendChild(card);
