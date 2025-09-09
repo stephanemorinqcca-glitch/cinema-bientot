@@ -48,9 +48,10 @@
             const card = document.createElement("div");
             card.className = "card";
 
+            <!--
             const titre = document.createElement("h3");
             titre.textContent = film.titre;
-            card.appendChild(titre);
+            card.appendChild(titre); -->
 
             if (film.affiche) {
               const posterDiv = document.createElement("div");
@@ -77,11 +78,11 @@
               card.appendChild(trailerDiv);
             }
 
-            if (film.synopsis) {
+            <!-- if (film.synopsis) {
               const synopsis = document.createElement("p");
               synopsis.textContent = film.synopsis;
               card.appendChild(synopsis);
-            }
+            } -->
 
             section.appendChild(card);
           });
