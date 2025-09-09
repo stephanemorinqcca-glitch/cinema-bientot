@@ -64,14 +64,46 @@
               if (film.bande_annonce) {
                 img.style.cursor = "pointer";
                 img.addEventListener("click", () => {
-                  if (film.bande_annonce.includes("youtube.com") || film.bande_annonce.includes("youtu.be")) {
-                    const trailerDiv = document.createElement("div");
-                    trailerDiv.className = "trailer";
+                  if (
+                    film.bande_annonce.includes("youtube.com") ||
+                    film.bande_annonce.includes("youtu.be") ||
+                    film.bande_annonce.includes("vimeo.com")
+                  ) {
+                    // Crée la modale
+                    const modal = document.createElement("div");
+                    modal.className = "modal";
+
+                    const modalContent = document.createElement("div");
+                    modalContent.className = "modal-content";
+
+                    const closeBtn = document.createElement("span");
+                    closeBtn.className = "close";
+                    closeBtn.innerHTML = "&times;";
+                    closeBtn.onclick = () => {
+                      modal.style.display = "none";
+                      modal.remove(); // Nettoyage
+                    };
+
                     const iframe = document.createElement("iframe");
-                    iframe.src = film.bande_annonce.replace("watch?v=", "embed/");
+                    let src = film.bande_annonce;
+
+                    // Adaptation pour YouTube
+                    if (src.includes("watch?v=")) {
+                      src = src.replace("watch?v=", "embed/");
+                    } else if (src.includes("youtu.be/")) {
+                      src = src.replace("youtu.be/", "www.youtube.com/embed/");
+                    }
+
+                    iframe.src = src;
                     iframe.allowFullscreen = true;
-                    trailerDiv.appendChild(iframe);
-                    card.appendChild(trailerDiv);
+
+                    modalContent.appendChild(closeBtn);
+                    modalContent.appendChild(iframe);
+                    modal.appendChild(modalContent);
+                    document.body.appendChild(modal);
+
+                    // Affiche la modale
+                    modal.style.display = "block";
                   } else {
                     window.open(film.bande_annonce, "_blank");
                   }
@@ -81,7 +113,6 @@
               posterDiv.appendChild(img);
               card.appendChild(posterDiv);
             }
-
             // Date : 25 OCTOBRE
             const dateDiv = document.createElement("div");
             dateDiv.className = "date";
