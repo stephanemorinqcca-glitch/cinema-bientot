@@ -100,7 +100,7 @@
             const date = new Date(film.OpeningDate);
             const jour = date.getDate();
             const mois = date.toLocaleString("fr-FR", { month: "long" }).toUpperCase();
-            dateDiv.innerHTML = `${jour} ${mois}`;
+            dateDiv.innerHTML = `<strong>${jour} ${mois}</strong>`;
             card.appendChild(dateDiv);
 
             section.appendChild(card);
