@@ -16,6 +16,24 @@
  </main>
 
  <script>
+    // Références à la modale
+    const modal = document.getElementById("video-modal");
+    const iframe = document.getElementById("video-frame");
+    const closeBtn = document.querySelector(".close");
+
+    // Fermer la modale
+    closeBtn.onclick = () => {
+    modal.style.display = "none";
+    iframe.src = ""; // Stop la vidéo
+    };
+
+    window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      iframe.src = "";
+      }
+    };
+   
     async function chargerFilms() {
       const container = document.getElementById("films-container");
 
