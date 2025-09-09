@@ -25,14 +25,29 @@
         const films = await response.json();
 
         // Regrouper les films par mois
+       // const filmsParMois = {};
+       // films.forEach(film => {
+       //  const date = new Date(film.OpeningDate);
+       //   const mois = date.toLocaleString("fr-FR", { month: "long", year: "numeric" });
+       //   if (!filmsParMois[mois]) {
+       //     filmsParMois[mois] = [];
+       //   }
+      //    filmsParMois[mois].push(film);
+      //  });
+
+        // Regrouper les films par mois et année (ex: "OCTOBRE 2025")
         const filmsParMois = {};
+
         films.forEach(film => {
           const date = new Date(film.OpeningDate);
-          const mois = date.toLocaleString("fr-FR", { month: "long", year: "numeric" });
-          if (!filmsParMois[mois]) {
-            filmsParMois[mois] = [];
+          const mois = date.toLocaleString("fr-FR", { month: "long" }).toUpperCase();
+          const annee = date.getFullYear();
+          const cle = `${mois} ${annee}`; // Format : "OCTOBRE 2025"
+
+          if (!filmsParMois[cle]) {
+            filmsParMois[cle] = [];
           }
-          filmsParMois[mois].push(film);
+          filmsParMois[cle].push(film);
         });
 
         // Générer le HTML
