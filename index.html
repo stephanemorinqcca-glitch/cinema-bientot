@@ -54,33 +54,27 @@
             // Affiche
             if (film.affiche) {
               const posterDiv = document.createElement("div");
-              posterDiv.className = "poster";
+            posterDiv.className = "poster";
 
-              const img = document.createElement("img");
-              img.src = film.affiche;
-              img.alt = "Affiche de " + film.titre;
+            const img = document.createElement("img");
+            img.src = film.affiche;
+            img.alt = "Affiche de " + film.titre;
 
-              // Si une bande-annonce est disponible
-              if (film.bande_annonce) {
+            if (film.bande_annonce) {
                 img.style.cursor = "pointer";
                 img.addEventListener("click", () => {
-                  if (film.bande_annonce.includes("youtube.com") || film.bande_annonce.includes("youtu.be")) {
-                    const trailerDiv = document.createElement("div");
-                    trailerDiv.className = "trailer";
-                    const iframe = document.createElement("iframe");
-                    iframe.src = film.bande_annonce.replace("watch?v=", "embed/");
-                    iframe.allowFullscreen = true;
-                    trailerDiv.appendChild(iframe);
-                    card.appendChild(trailerDiv);
-                  } else {
-                    window.open(film.bande_annonce, "_blank");
-                  }
-                });
-              }
-
-              posterDiv.appendChild(img);
-              card.appendChild(posterDiv);
+                let videoUrl = film.bande_annonce;
+                if (videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")) {
+                  videoUrl = videoUrl.replace("watch?v=", "embed/");
+                }
+                iframe.src = videoUrl;
+                modal.style.display = "block";
+              });
             }
+
+            posterDiv.appendChild(img);
+            card.appendChild(posterDiv);
+          }
 
             // Date : 25 OCTOBRE
             const dateDiv = document.createElement("div");
