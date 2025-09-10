@@ -22,7 +22,7 @@ header {
 #banner {
   width: 100%;
   height: auto;
-  max-width: 1280px; /* ou la largeur réelle de l'image */
+  max-width: 960px; /* ou la largeur réelle de l'image */
   display: block;
   margin: 0 auto;
 }
