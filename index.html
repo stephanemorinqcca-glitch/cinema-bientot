@@ -80,7 +80,7 @@
                     closeBtn.className = "close";
                     closeBtn.innerHTML = "&times;";
                     closeBtn.onclick = () => {
-                      modal.style.display = "block";
+                      modal.style.display = "none";
                       modal.remove(); // Nettoyage
                     };
 
@@ -108,6 +108,7 @@
                     iframe.height = "360";
                     iframe.frameBorder = "0";
                     iframe.allowFullscreen = true;
+                    iframe.allow = "autoplay"
 
                     document.body.appendChild(iframe);
 
