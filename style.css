@@ -18,8 +18,13 @@ header {
 	display: block;
 	text-align: center;
 }
+
 #banner {
-	width: 75%;
+  width: 100%;
+  height: auto;
+  max-width: 1280px; /* ou la largeur réelle de l'image */
+  display: block;
+  margin: 0 auto;
 }
 
 h1 {
