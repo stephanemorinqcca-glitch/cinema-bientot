@@ -42,6 +42,13 @@ h1 {
   margin-top: 10px;   
 }
 
+h2 {
+  font-size: 11px; 
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;   
+}
+
 section {
   margin-bottom: 3rem;
 }
