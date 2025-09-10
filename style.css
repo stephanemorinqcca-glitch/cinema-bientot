@@ -14,10 +14,12 @@ main {
   padding: 2rem;
 }
 
-h1, h2 {
+h1 {
+  font-size: 48px; 
+  font-weight: bold;
   text-align: center;
-  color: #fff;
-}
+  margin-top: 10px;   
+}}
 
 section {
   margin-bottom: 3rem;
