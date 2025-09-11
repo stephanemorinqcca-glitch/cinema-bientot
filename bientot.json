@@ -373,5 +373,20 @@
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=RFpq0o8Qc3I",
     "content": "Animation"
+  },
+  {
+    "id": "ST00001782",
+    "titre": "28 ANS PLUS TARD: LE TEMPLE DES MORTS",
+    "OpeningDate": "2026-01-16T00:00:00",
+    "synopsis": null,
+    "classification": "-",
+    "duree": 120,
+    "genre": "Horror",
+    "format": "2D Digital",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004992",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004990",
+    "banniere": "",
+    "bande_annonce": "https://youtu.be/82TG6LMroTw?list=TLGGa3rO2nzYz5cxMTA5MjAyNQ",
+    "content": null
   }
 ]
