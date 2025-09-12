@@ -50,10 +50,11 @@ section {
 }
 
 .note {
-  font-size: 1rem;
-  font-weight: bold;
   text-align: center;
-  margin-top: 5px;   
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #ccc;
+  margin: 1rem 0 2rem;
 }
 
 /* Conteneur de cartes côte à côte */
