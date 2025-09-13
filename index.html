@@ -65,6 +65,7 @@
 
               const img = document.createElement("img");
               img.src = film.affiche;
+              img.loading = 'lazy';
               img.alt = "Affiche de " + film.titre;
 
               // Si une bande-annonce est disponible
