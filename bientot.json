@@ -75,6 +75,21 @@
     "content": "Suspense"
   },
   {
+    "id": "ST00001152",
+    "titre": "AVATAR: LA VOIE DE L'EAU 3D",
+    "OpeningDate": "2025-10-03T00:00:00",
+    "synopsis": "Dans le futur, sur la planète Pandora, l’ancien soldat Jack Sully fait partie de la tribu Na’vi depuis des années. Devenu chef de la résistance contre l’invasion dévastatrice des humains, il organise des opérations de sabotage qui ralentissent la colonisation du territoire et irritent le commandement suprême. Poursuivi par l’unité spéciale envoyée pour le capturer, il trouve refuge dans le clan voisin dont les membres vivent en harmonie avec la mer. Déterminé à régler ses vieux comptes avec Jack, le colonel Quaritch se lance dans une chasse à l’homme sans lésiner sur les moyens. Ses efforts se couronnent par un affrontement ultime durant lequel une révélation surprenante bouleverse le dénouement du conflit entre les deux militaires.",
+    "classification": "G",
+    "duree": 193,
+    "genre": "Adventure",
+    "format": "3D Digital",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000003141",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000003139",
+    "banniere": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000003269",
+    "bande_annonce": "https://www.youtube.com/watch?v=u3wxCNUbaz0",
+    "content": "Déconseillé aux jeunes enfants | Aventures de science-fiction"
+  },
+  {
     "id": "ST00001764",
     "titre": "LE COMBATTANT",
     "OpeningDate": "2025-10-03T00:00:00",
@@ -163,21 +178,6 @@
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=h6sEy4sekOU",
     "content": "Comédie"
-  },
-  {
-    "id": "ST00001760",
-    "titre": "MORTAL KOMBAT II",
-    "OpeningDate": "2025-10-24T00:00:00",
-    "synopsis": null,
-    "classification": "-",
-    "duree": 120,
-    "genre": "Adventure",
-    "format": "2D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004879",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004877",
-    "banniere": "",
-    "bande_annonce": "https://youtu.be/kfEeuC3b6yo",
-    "content": "Aventures"
   },
   {
     "id": "ST00001770",
