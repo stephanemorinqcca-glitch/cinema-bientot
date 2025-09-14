@@ -3,7 +3,7 @@
     "id": "ST00001722",
     "titre": "UN BEAU GRAND VOYAGE AUDACIEUX",
     "OpeningDate": "2025-09-19T00:00:00",
-    "synopsis": "Et si vous pouviez ouvrir une porte et la franchir pour revivre un moment marquant de votre passé ? Sarah (Margot Robbie) et David (Colin Farrell), deux célibataires inconnus, se rencontrent au mariage d'un ami commun et, par un surprenant coup du sort, se retrouvent embarqués dans un voyage grandiose et audacieux : une aventure drôle, fantastique et palpitante où ils revivent des moments importants de leur passé respectif, éclairant leur cheminement vers le présent... et ayant peut-être la chance de changer leur avenir.",
+    "synopsis": "David rencontre Sarah alors qu’ils sont conviés à un mariage. Une série de circonstances inusitées les obligent à faire la route ensemble, le temps d’un voyage étrange, pendant lequel ils apprennent à se connaître et explorent leurs souvenirs du passé d’une façon très singulière.",
     "classification": "G",
     "duree": 109,
     "genre": "Fantasy",
@@ -19,30 +19,30 @@
     "titre": "LUI",
     "OpeningDate": "2025-09-19T00:00:00",
     "synopsis": "LUI met en vedette Tyriq Withers, ancien joueur de football américain universitaire, dans le rôle de Cameron Cade, un quart-arrière en pleine ascension qui a consacré sa vie, et son identité, au football. La veille du Combine, le repêchage annuel du football professionnel, Cam est violemment attaqué par un admirateur déséquilibré et subit un traumatisme crânien qui pourrait bien mettre fin à sa carrière.",
-    "classification": "-",
-    "duree": 120,
+    "classification": "13+",
+    "duree": 98,
     "genre": "Horror",
     "format": "2D Digital",
     "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004952",
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004950",
     "banniere": "",
     "bande_annonce": "https://youtu.be/TPZN0oxxBpY",
-    "content": "Suspense d'épouvante"
+    "content": "Violence | Horreur | Suspense psychologique"
   },
   {
     "id": "ST00001726",
     "titre": "GABBY ET LA MAISON MAGIQUE: LE FILM",
     "OpeningDate": "2025-09-26T00:00:00",
     "synopsis": "Le voyage en voiture de Gabby et de grand-mère Gigi prend une tournure inattendue lorsque la précieuse maison de poupée de Gabby se retrouve entre les mains de l'excentrique dame aux chats Vera. Gabby se lance dans une aventure pour réunir les chats Gabby et récupérer sa maison de poupée adorée avant qu'il ne soit trop tard.",
-    "classification": "-",
-    "duree": 120,
+    "classification": "G",
+    "duree": 88,
     "genre": "Animated ",
     "format": "2D Digital",
     "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004791",
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004789",
     "banniere": "",
     "bande_annonce": "https://youtu.be/4dGzUH5siHA",
-    "content": null
+    "content": "Aventures fantaisistes"
   },
   {
     "id": "ST00001728",
@@ -76,7 +76,7 @@
   },
   {
     "id": "ST00001152",
-    "titre": "AVATAR: LA VOIE DE L'EAU 3D",
+    "titre": "AVATAR: LA VOIE DE L'EAU (3D)",
     "OpeningDate": "2025-10-03T00:00:00",
     "synopsis": "Dans le futur, sur la planète Pandora, l’ancien soldat Jack Sully fait partie de la tribu Na’vi depuis des années. Devenu chef de la résistance contre l’invasion dévastatrice des humains, il organise des opérations de sabotage qui ralentissent la colonisation du territoire et irritent le commandement suprême. Poursuivi par l’unité spéciale envoyée pour le capturer, il trouve refuge dans le clan voisin dont les membres vivent en harmonie avec la mer. Déterminé à régler ses vieux comptes avec Jack, le colonel Quaritch se lance dans une chasse à l’homme sans lésiner sur les moyens. Ses efforts se couronnent par un affrontement ultime durant lequel une révélation surprenante bouleverse le dénouement du conflit entre les deux militaires.",
     "classification": "G",
@@ -343,20 +343,5 @@
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=RFpq0o8Qc3I",
     "content": "Animation"
-  },
-  {
-    "id": "ST00001782",
-    "titre": "28 ANS PLUS TARD: LE TEMPLE DES MORTS",
-    "OpeningDate": "2026-01-16T00:00:00",
-    "synopsis": null,
-    "classification": "-",
-    "duree": 120,
-    "genre": "Horror",
-    "format": "2D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004992",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004990",
-    "banniere": "",
-    "bande_annonce": "https://www.youtube.com/watch?v=nxNHaDEPVpU",
-    "content": null
   }
 ]
