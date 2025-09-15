@@ -72,6 +72,10 @@
               // img.alt = "Affiche de " + film.titre;
               img.alt = film.titre;
 
+              img.addEventListener("load", () => {
+                img.classList.add("loaded");
+              });
+
               // Si une bande-annonce est disponible
               if (film.bande_annonce) {
                 img.style.cursor = "pointer";
