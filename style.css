@@ -78,9 +78,20 @@ section {
   color: #fff;
 }
 
+.poster {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
 .poster img {
   width: 100%;
   border-radius: 4px;
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+
+.poster img.loaded {
+  filter: none;
 }
 
 .date {
