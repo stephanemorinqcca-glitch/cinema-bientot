@@ -35,8 +35,8 @@ for film in films:
             release_date = datetime.strptime(release_date_str, "%Y-%m-%dT%H:%M:%S").date()
             national_code = film.get("NationalCode", "")
             
-            # Exclure les films avec NationalCode == -1
-            if release_date > now and national_code != -1:
+            # Exclure les films avec NationalCode == "0"
+            if release_date > now and national_code != "0":
                 bientot_films.append({
                     "id": film.get("Id"),
                     "titre": film.get("Title"),
