@@ -33,7 +33,10 @@ for film in films:
     if release_date_str:
         try:
             release_date = datetime.strptime(release_date_str, "%Y-%m-%dT%H:%M:%S").date()
-            if release_date > now:
+            national_code = film.get("NationalCode", "")
+            
+            # Exclure les films avec NationalCode == -1
+            if release_date > now and national_code != -1:
                 bientot_films.append({
                     "id": film.get("Id"),
                     "titre": film.get("Title"),
@@ -47,7 +50,7 @@ for film in films:
                     "thumbnail": film.get("FilmPosterThumbnailUrl", ""),
                     "banniere": film.get("BackdropImageUrl", ""),
                     "bande_annonce": film.get("FilmTrailerUrl", ""),
-                    "content": film.get("Content", "")
+                    "content": film.get("Content", ""),
                 })
         except Exception as e:
             print(f"⚠️ Erreur de parsing de date pour {release_date_str} : {e}")
