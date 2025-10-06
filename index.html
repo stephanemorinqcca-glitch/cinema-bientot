@@ -67,7 +67,15 @@
               posterDiv.className = "poster";
 
               const img = document.createElement("img");
-              img.src = film.affiche;
+              // img.src = film.affiche;
+              
+              // Modifier l'URL de l'affiche pour prendre le format entre le poster et le thumbnail
+              // veezi donne un numéro pour le thumbnail, +1 pour plus grand et +2 pour le poster
+              const lastPart = film.affiche.slice(-10);
+              const newNumber = (parseInt(lastPart, 10) - 1).toString().padStart(10, '0');
+              const baseUrl = film.affiche.slice(0, -10);
+              img.src = baseUrl + newNumber;
+
               img.loading = 'lazy';
               // img.alt = "Affiche de " + film.titre;
               img.alt = film.titre;
