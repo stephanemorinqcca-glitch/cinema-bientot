@@ -1,70 +1,40 @@
 [
   {
-    "id": "ST00001734",
-    "titre": "TÉLÉPHONE NOIR  II",
-    "OpeningDate": "2025-10-17T00:00:00",
-    "synopsis": "Alors que Finn, maintenant 17 ans, essaie de retrouver une vie plus ou moins normale après sa captivité, Gwen, une forte tête de 15 ans, commence à recevoir des appels téléphoniques du téléphone noir dans ses rêves. Ses visions sont troublantes, ses rêves lui montrent trois garçons qui se font traquer dans un camp d’hiver appelé Alpine Lake. Bien décidée à résoudre ce mystère et à mettre fin à ses tourments et à ceux de son frère, Gwen arrive à convaincre Finn de se rendre au camp pendant une tempête hivernale. Là, elle fait une découverte bouleversante, elle réalise que le destin de The Grabber et l’histoire de sa propre famille se croisent. Elle et Finn doivent affronter le tueur que la mort a rendu encore plus puissant et qui représente à leurs yeux bien plus qu’ils ne l’auraient imaginé.",
-    "classification": "13+",
-    "duree": 114,
-    "genre": "Horror",
-    "format": "2D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004871",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004869",
-    "banniere": "",
-    "bande_annonce": "https://youtu.be/laLj9STwfCM",
-    "content": "Violence | Horreur | Suspense d'épouvante"
-  },
-  {
-    "id": "ST00001736",
-    "titre": "BONNE FORTUNE",
-    "OpeningDate": "2025-10-17T00:00:00",
-    "synopsis": "Gabriel, un ange gardien assigné à la prévention de petits accidents automobiles, souhaite avoir de plus grandes responsabilités afin d’aider les âmes perdues, comme le font ses collègues. Il est témoin des difficultés vécues par Arj, qui cumule les emplois journaliers et peine à joindre les deux bouts. À l’opposé, Jeff est un riche entrepreneur qui mène une existence oisive et luxueuse. Gabriel décide d’intervenir auprès de ces deux personnes pour redonner espoir à Arj. Son assistance n’a toutefois pas l’effet escompté.",
-    "classification": "G",
-    "duree": 97,
-    "genre": "Comedy",
-    "format": "2D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004964",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004962",
-    "banniere": "",
-    "bande_annonce": "https://www.youtube.com/watch?v=h6sEy4sekOU",
-    "content": "Comédie fantaisiste"
-  },
-  {
     "id": "ST00001770",
     "titre": "SPRINGSTEEN:  DÉLIVREZ-MOI DE NULLE PART",
     "OpeningDate": "2025-10-24T00:00:00",
     "synopsis": "Le film retrace l'élaboration de l'album « Nebraska » de Bruce Springsteen, sorti en 1982, alors qu'il était un jeune musicien sur le point de devenir une vedette mondiale, luttant pour concilier les pressions du succès et les fantômes de son passé. Enregistré sur un magnétophone à quatre pistes dans la chambre de Springsteen à New Jersey, l'album a marqué un moment essentiel de sa vie et est considéré comme l'une de ses œuvres les plus durables - un disque acoustique brut et hanté, rempli d'âmes perdues à la recherche d'une raison de croire.",
-    "classification": "EC",
-    "duree": 120,
+    "classification": "G",
+    "duree": 119,
     "genre": "Biography",
     "format": "2D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004907",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004905",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005120",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005118",
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=4aYhqDRF5EE",
-    "content": null
+    "content": "Drame biographique"
   },
   {
     "id": "ST00001772",
     "titre": "ON TE REGRETTE",
     "OpeningDate": "2025-10-24T00:00:00",
-    "synopsis": "L'histoire se concentre sur la relation tendue entre la jeune mère Morgan Grant et sa fille adolescente Clara, exacerbée par la mort tragique du mari de Morgan, Chris, les forçant à surmonter ensemble les défis de la vie.",
-    "classification": "EC",
-    "duree": 117,
+    "synopsis": "Adapté du best-seller de Colleen Hoover, le film présente Morgan Grant et sa fille Clara qui explorent ce qui reste après un accident dévastateur qui révèle une trahison choquante et les force à affronter des secrets de famille, à redéfinir l'amour et à se redécouvrir. ON TE REGRETTE est une histoire de croissance, de résilience et de découverte de soi au lendemain d'une tragédie.",
+    "classification": "G",
+    "duree": 116,
     "genre": "Drama",
     "format": "2D Digital",
     "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004911",
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004909",
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=CmPaBuohSJc",
-    "content": "Drame"
+    "content": "Drame sentimental"
   },
   {
     "id": "ST00001804",
     "titre": "LA FABRIQUE DES MONSTRES",
     "OpeningDate": "2025-10-31T00:00:00",
     "synopsis": "Dans le vieux château de Grotteskew, un savant fou fabrique, rafistole, et invente sans cesse des monstres farfelus. P’tit Cousu, sa toute première création, petit être étrange composé de pièces détachées, et oublié avec le temps, sert de guide aux nouvelles créations de son maître. Jusqu’au jour où un cirque débarque en ville... À la recherche d'une nouvelle attraction, son propriétaire Fulbert Montremonstre tente par tous les moyens d'accéder à cette fabrique de monstres. P’tit Cousu pourrait bien être la future star de son spectacle...",
-    "classification": null,
+    "classification": "EC",
     "duree": 89,
     "genre": "Animated ",
     "format": "2D Digital",
@@ -72,7 +42,7 @@
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005070",
     "banniere": "",
     "bande_annonce": null,
-    "content": null
+    "content": "Animation"
   },
   {
     "id": "ST00001738",
@@ -121,7 +91,7 @@
   },
   {
     "id": "ST00001790",
-    "titre": "LES COWBOYS FRINGANTS - QUÉBEC 14/01/23",
+    "titre": "LES COWBOYS FRINGANTS - QUÉBEC /14/01/23",
     "OpeningDate": "2025-11-14T00:00:00",
     "synopsis": "Les  Cowboys  Fringants  comme  vous  ne  les avez  jamais  vus!  (Re)vivez  l’ambiance magique d’un spectacle du groupe, comme si vous étiez sur scène avec eux. Vingt ans  après  la  captation  historique  des  Cowboys  Fringants  au  Centre  Bell  en  2003,qui  mettait  ﬁn  à  la  tournée  exceptionnelle  de Break  syndical,  le  groupe  a  récidivé en  janvier  2023  avec  un  concert-événement  ﬁlmé  au  Centre  Vidéotron  pendant la  tournée Les  Antipodes qui  a  brisé  tous  les  records  d’assistance  et  de  vente  de billets.  Les  Cowboys  Fringants  ont  l’habitude  des  concerts  à  grand  déploiement,eux  qui  ont  rempli  à  pleine  capacité  et  à  maintes  reprises  le  Centre  Bell  et  le Centre Vidéotron, ainsi que des dizaines d’arénas en Europe francophone. Une foule festive,  une  communion  incomparable  avec  le  public,  des  fans  visiblement  émus,des images cinématographiques époustouﬂantes et les grands hymnes du groupe,cette nouvelle captation rappelle les ﬁlms de concerts rock historiques!\r\n**Billet 25$ | Aucun laissez-passer n'est accepté \r\nVente de billets sur place seulement, pour la séance en cours, aux personnes présentes\r\nOuverture de la salle 30 minutes avant la représentation**",
     "classification": "EC",
@@ -203,8 +173,8 @@
     "duree": 192,
     "genre": "Adventure",
     "format": "3D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004988",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004986",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005108",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005106",
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=sUsZmNbEn8A",
     "content": "DAJE | Aventures de science-fiction"
@@ -282,6 +252,21 @@
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005078",
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=jC5qbKG9qzo",
+    "content": null
+  },
+  {
+    "id": "ST00001816",
+    "titre": "ENVOYEZ DE L'AIDE",
+    "OpeningDate": "2026-01-30T00:00:00",
+    "synopsis": "Deux collègues, Linda Liddle et Bradley Preston, se retrouvent bloqués sur une île déserte après avoir été les seuls survivants d'un accident d'avion. Sur l'île, ils doivent surmonter leurs différends passés et travailler ensemble pour survivre, mais au final, c'est une bataille troublante teintée d'humour noir, entre volonté et intelligence, qui les attend pour s'en sortir vivants.",
+    "classification": null,
+    "duree": 120,
+    "genre": "Horror",
+    "format": "2D Digital",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005104",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005102",
+    "banniere": "",
+    "bande_annonce": "https://www.youtube.com/watch?v=VWbFGATB72o",
     "content": null
   },
   {
@@ -368,8 +353,8 @@
     "duree": 120,
     "genre": "Adventure",
     "format": "2D Digital",
-    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004879",
-    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004877",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005116",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005114",
     "banniere": "",
     "bande_annonce": "https://youtu.be/kfEeuC3b6yo",
     "content": "Aventures"
