@@ -33,7 +33,7 @@
     "id": "ST00001804",
     "titre": "LA FABRIQUE DES MONSTRES",
     "OpeningDate": "2025-10-31T00:00:00",
-    "synopsis": "Dans le vieux château de Grotteskew, un savant fou fabrique, rafistole, et invente sans cesse des monstres farfelus. P’tit Cousu, sa toute première création, petit être étrange composé de pièces détachées, et oublié avec le temps, sert de guide aux nouvelles créations de son maître. Jusqu’au jour où un cirque débarque en ville... À la recherche d'une nouvelle attraction, son propriétaire Fulbert Montremonstre tente par tous les moyens d'accéder à cette fabrique de monstres. P’tit Cousu pourrait bien être la future star de son spectacle...",
+    "synopsis": "Dans le vieux château de Grotteskew, un savant fou fabrique, rafistole, et invente sans cesse des monstres farfelus. P’tit Cousu, sa toute première création, petit être étrange composé de pièces détachées, et oublié avec le temps, sert de guide aux nouvelles créations de son maître. Jusqu’au jour où un cirque débarque en ville... À la recherche d'une nouvelle attraction, son propriétaire Fulbert Montremonstre tente par tous les moyens d'accéder à cette fabrique de monstres. P’tit Cousu pourrait bien être la future star de son spectacle...**Seulement les laissez-passer émis par Cinéma centre-ville sont acceptés.**",
     "classification": "EC",
     "duree": 89,
     "genre": "Animated ",
@@ -225,6 +225,21 @@
     "content": "Aventures fantastiques"
   },
   {
+    "id": "ST00001818",
+    "titre": "PRIMATE",
+    "OpeningDate": "2026-01-09T00:00:00",
+    "synopsis": "De retour de l'université, Lucy retrouve sa famille, dont son chimpanzé Ben. Ben entre en colère lors d'une fête au bord de la piscine et devient agressif. Lucy et ses amis se barricadent dans la piscine et cherchent des solutions pour survivre au chimpanzé vicieux.",
+    "classification": null,
+    "duree": 89,
+    "genre": "Horror",
+    "format": "2D Digital",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005124",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005122",
+    "banniere": "",
+    "bande_annonce": "https://www.youtube.com/watch?v=xmV0wtdcQiE",
+    "content": null
+  },
+  {
     "id": "ST00001782",
     "titre": "28 ANS PLUS TARD: LE TEMPLE DES MORTS",
     "OpeningDate": "2026-01-16T00:00:00",
@@ -282,6 +297,36 @@
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004994",
     "banniere": "",
     "bande_annonce": "https://www.youtube.com/watch?v=285WBsXW6fY",
+    "content": null
+  },
+  {
+    "id": "ST00001820",
+    "titre": "PSYCHO KILLER",
+    "OpeningDate": "2026-02-20T00:00:00",
+    "synopsis": "Après le meurtre brutal de son mari, une agente de la police routière du Kansas (Georgina Campbell) se lance dans une quête pour retrouver le coupable. Au fil de ses recherches, elle se rend compte que l'homme responsable (James Preston Rogers) est un tueur en série sadique, et que la profondeur de sa dépravation mentale et ses sinistres intentions sont plus tordues que quiconque aurait pu l'imaginer.",
+    "classification": null,
+    "duree": 120,
+    "genre": "Horror",
+    "format": "2D Digital",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005128",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005126",
+    "banniere": "",
+    "bande_annonce": null,
+    "content": null
+  },
+  {
+    "id": "ST00001822",
+    "titre": "LYDIA ET LE VAISSEAU DES TEMPÊTES",
+    "OpeningDate": "2026-02-20T00:00:00",
+    "synopsis": "Lorsque son frère aîné Thaddeus est mystérieusement enlevé par l’Envoûteur, Lydia (11 ans) part à sa recherche dans la Mer de Brume. Recueillie par l'équipage du Dauphin, un navire volant, elle devient l’apprentie de l'astromagicienne Ambrosia. Celle-ci cherche d’autres enfants disparus, dont son propre fils. Bien décidée à résoudre ce mystère, Lydia devra apprendre l’astromagie et ainsi affronter l’Envoûteur.**Seulement les laissez-passer émis par Cinéma centre-ville sont acceptés.**",
+    "classification": null,
+    "duree": 120,
+    "genre": "Animated ",
+    "format": "2D Digital",
+    "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005132",
+    "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005130",
+    "banniere": "",
+    "bande_annonce": null,
     "content": null
   },
   {
