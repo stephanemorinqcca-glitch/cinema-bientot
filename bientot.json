@@ -416,7 +416,7 @@
     "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005088",
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005086",
     "banniere": "",
-    "bande_annonce": null,
+    "bande_annonce": "https://www.youtube.com/watch?v=TtLfMCD5Bu4",
     "content": null
   },
   {
@@ -447,21 +447,6 @@
     "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005090",
     "banniere": "",
     "bande_annonce": null,
-    "content": null
-  },
-  {
-    "id": "ST00001838",
-    "titre": "Moana",
-    "OpeningDate": "2026-07-10T00:00:00",
-    "synopsis": "Live action of Moana",
-    "classification": "TBC",
-    "duree": 30,
-    "genre": "Adventure",
-    "format": "2D Digital",
-    "affiche": "",
-    "thumbnail": "",
-    "banniere": "",
-    "bande_annonce": "",
     "content": null
   },
   {
