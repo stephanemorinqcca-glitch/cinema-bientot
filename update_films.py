@@ -24,7 +24,7 @@ try:
     films = response.json()
 except requests.exceptions.RequestException as e:
     print(f"❌ Erreur réseau : {e}")
-    films = []
+    films = None  # Indique qu'on ne doit pas continuer
 
 # Filtrer les films dont la date de sortie est plus tard qu'aujourd'hui
 bientot_films = []
@@ -64,8 +64,9 @@ for film in films:
 # 🔽 Tri par date croissante
 bientot_films.sort(key=lambda x: datetime.strptime(x["OpeningDate"], "%Y-%m-%dT%H:%M:%S"))
 
-# Sauvegarder dans bientot.json
+# Écriture du fichier seulement si films est valide
 with open("bientot.json", "w", encoding="utf-8") as f:
-    json.dump(bientot_films, f, ensure_ascii=False, indent=2)
-
-print(f"✅ {len(bientot_films)} films enregistrés dans bientot.json.")
+    json.dump(bientot_films, f, ensure_ascii=False, indent=4)
+    print(f"✅ {len(bientot_films)} films enregistrés dans bientot.json.")
+else:
+    print("⏩ Aucun changement apporté à bientot.json (erreur réseau).")
