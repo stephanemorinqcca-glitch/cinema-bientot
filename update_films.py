@@ -32,7 +32,7 @@ if films:
     now = datetime.now().date()
     for film in films:
         # ❌ API ne fournit pas de Title, arrêt du process
-        titre = film.get("Title")
+        titre = film.get("Title","")
         if not titre:
             print("❌ API ne fournit pas de Title, arrêt du process.")
             sys.exit(1)  # Arrêt complet du script
