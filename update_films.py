@@ -27,42 +27,45 @@ except requests.exceptions.RequestException as e:
     films = None  # Indique qu'on ne doit pas continuer
 
 # Filtrer les films dont la date de sortie est plus tard qu'aujourd'hui
-bientot_films = []
-for film in films:
-    # ❌ API ne fournit pas de Title, arrêt du process
-    titre = film.get("Title")
-    if not titre:
-        print("❌ API ne fournit pas de Title, arrêt du process.")
-        sys.exit(1)  # Arrêt complet du script
-    
-    release_date_str = film.get("OpeningDate")
-    if release_date_str:
-        try:
-            release_date = datetime.strptime(release_date_str, "%Y-%m-%dT%H:%M:%S").date()
-            national_code = film.get("NationalCode", "")
-            
-            # Exclure les films avec NationalCode == "0"
-            if release_date > now and national_code != "0":
-                bientot_films.append({
-                    "id": film.get("Id"),
-                    "titre": film.get("Title"),
-                    "OpeningDate": release_date_str,
-                    "synopsis": film.get("Synopsis", ""),
-                    "classification": film.get("Rating", ""),
-                    "duree": film.get("Duration", ""),
-                    "genre": film.get("Genre", []),
-                    "format": film.get("Format", ""),
-                    "affiche": film.get("FilmPosterUrl", ""),
-                    "thumbnail": film.get("FilmPosterThumbnailUrl", ""),
-                    "banniere": film.get("BackdropImageUrl", ""),
-                    "bande_annonce": film.get("FilmTrailerUrl", ""),
-                    "content": film.get("Content", ""),
-                })
-        except Exception as e:
-            print(f"⚠️ Erreur de parsing de date pour {release_date_str} : {e}")
 
-# 🔽 Tri par date croissante
-bientot_films.sort(key=lambda x: datetime.strptime(x["OpeningDate"], "%Y-%m-%dT%H:%M:%S"))
+if films:
+    bientot_films = []
+    now = datetime.now().date()
+    for film in films:
+        # ❌ API ne fournit pas de Title, arrêt du process
+        titre = film.get("Title")
+        if not titre:
+            print("❌ API ne fournit pas de Title, arrêt du process.")
+            sys.exit(1)  # Arrêt complet du script
+    
+        release_date_str = film.get("OpeningDate")
+        if release_date_str:
+            try:
+                release_date = datetime.strptime(release_date_str, "%Y-%m-%dT%H:%M:%S").date()
+                national_code = film.get("NationalCode", "")
+            
+                # Exclure les films avec NationalCode == "0"
+                if release_date > now and national_code != "0":
+                    bientot_films.append({
+                        "id": film.get("Id"),
+                        "titre": film.get("Title"),
+                        "OpeningDate": release_date_str,
+                        "synopsis": film.get("Synopsis", ""),
+                        "classification": film.get("Rating", ""),
+                        "duree": film.get("Duration", ""),
+                        "genre": film.get("Genre", []),
+                        "format": film.get("Format", ""),
+                        "affiche": film.get("FilmPosterUrl", ""),
+                        "thumbnail": film.get("FilmPosterThumbnailUrl", ""),
+                        "banniere": film.get("BackdropImageUrl", ""),
+                        "bande_annonce": film.get("FilmTrailerUrl", ""),
+                        "content": film.get("Content", ""),
+                    })
+            except Exception as e:
+                print(f"⚠️ Erreur de parsing de date pour {release_date_str} : {e}")
+
+    # 🔽 Tri par date croissante
+    bientot_films.sort(key=lambda x: datetime.strptime(x["OpeningDate"], "%Y-%m-%dT%H:%M:%S"))
 
     # Écriture du fichier seulement si films est valide
     with open("bientot.json", "w", encoding="utf-8") as f:
