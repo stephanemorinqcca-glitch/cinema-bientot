@@ -233,10 +233,10 @@
         "duree": 120,
         "genre": "Animated ",
         "format": "2D Digital",
-        "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005000",
-        "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000004998",
+        "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005216",
+        "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005214",
         "banniere": "",
-        "bande_annonce": "https://www.youtube.com/watch?v=MSXKLuvo2-I",
+        "bande_annonce": "https://www.youtube.com/watch?v=NXw1ZJtDTwo",
         "content": null
     },
     {
@@ -402,6 +402,21 @@
         "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005202",
         "banniere": "",
         "bande_annonce": "https://www.youtube.com/watch?v=pxVH01y7hfc",
+        "content": null
+    },
+    {
+        "id": "ST00001844",
+        "titre": "HUNGER GAMES: LEVER DE SOLEIL SUR LA MOISSON",
+        "OpeningDate": "2026-11-20T00:00:00",
+        "synopsis": null,
+        "classification": null,
+        "duree": 120,
+        "genre": "Action",
+        "format": "2D Digital",
+        "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005220",
+        "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005218",
+        "banniere": "",
+        "bande_annonce": "https://www.youtube.com/watch?v=669brAB7ifY",
         "content": null
     }
 ]
