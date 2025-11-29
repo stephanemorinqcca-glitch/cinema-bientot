@@ -1,35 +1,5 @@
 [
     {
-        "id": "ST00001746",
-        "titre": "ZOOTOPIA II",
-        "OpeningDate": "2025-11-26T00:00:00",
-        "synopsis": "Judy et Nick se retrouvent sur la piste sinueuse d'un grand mystère lorsque Gary De'Snake arrive à Zootopia et met la métropole animale sens dessus dessous. Pour résoudre l'affaire, ils doivent s'infiltrer dans de nouveaux quartiers imprévisibles de la ville, où leur coopération grandissante est mise à rude épreuve.",
-        "classification": "G",
-        "duree": 108,
-        "genre": "Animated ",
-        "format": "2D Digital",
-        "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005064",
-        "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005062",
-        "banniere": "",
-        "bande_annonce": "https://www.youtube.com/watch?v=dHtrB6E-vO0",
-        "content": "Animation"
-    },
-    {
-        "id": "ST00001802",
-        "titre": "LES FURIES",
-        "OpeningDate": "2025-11-28T00:00:00",
-        "synopsis": "Avec ses héroïnes intenses et imparfaites, LES FURIES est la première comédie sportive québécoise au féminin. Waterloo aura désormais son équipe de hockey semi-pro masculine expulsant ainsi les ligues féminines amateures de l’aréna. Pour venger leur temps de glace perdu, une joueuse de hockey impulsive et une impitoyable octogénaire-ancienne championne de derby- ont un plan : recruter les laissées pour compte de la ville et mettre sur pied une équipe de roller derby clandestine. Avec la complicité du Cercle de fermières, elles prouveront que le sport féminin peut aussi soulever les foules et que la sororité est l’ultime acte de résistance.",
-        "classification": "G",
-        "duree": 107,
-        "genre": "Comedy",
-        "format": "2D Digital",
-        "affiche": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005068",
-        "thumbnail": "https://cdn.useast.veezi.com/Media/data/v2/get/bhxnyk826jyn2z6wtzwch7mp2g/0000005066",
-        "banniere": "",
-        "bande_annonce": "https://youtu.be/8aV7GRK-8Ck",
-        "content": "Comédie sportive"
-    },
-    {
         "id": "ST00001748",
         "titre": "CINQ NUITS CHEZ FREDDY II",
         "OpeningDate": "2025-12-05T00:00:00",
