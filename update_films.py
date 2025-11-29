@@ -29,7 +29,6 @@ except requests.exceptions.RequestException as e:
 # Filtrer les films dont la date de sortie est plus tard qu'aujourd'hui
 if films:
     bientot_films = []
-    now = datetime.now().date()
     for film in films:
         # ❌ API ne fournit pas de Title, arrêt du process
         titre = film.get("Title","")
