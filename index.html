@@ -23,6 +23,12 @@
 <!--   <h1>BIENTÔT À L'AFFICHE</h1> -->
   <p class="note">*(Sujet à changement sans préavis)</p>
   <div id="films-container" class="card-container"></div>
+  <div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('videoModal').style.display='none'; document.getElementById('trailerFrame').src='';">&times;</span>
+    <iframe id="trailerFrame" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
 </main>
 
  <script>
